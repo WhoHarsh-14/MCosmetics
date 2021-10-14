@@ -1,0 +1,6 @@
+name: CosmeticAddon
+version: '${project.version}'
+main: me.harsh.cosmeticaddon.CosmeticAddon
+api-version: 1.17
+authors: [ harsh_op ]
+description: Addon For Marcel Bedwars
