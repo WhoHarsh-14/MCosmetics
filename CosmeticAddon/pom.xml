@@ -19,16 +19,23 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
+		<spigot.version>1.17-R0.1-SNAPSHOT</spigot.version>
+		<foundation.version>5.11.2</foundation.version>
 	</properties>
+
 
 	<repositories>
 		<repository>
-			<id>mineacademy-repo</id>
-			<url>https://bitbucket.org/kangarko/libraries/raw/master</url>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 		<repository>
 			<id>spigot-repo</id>
 			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots</url>
+		</repository>
+		<repository>
+			<id>marcely-repo</id>
+			<url>https://repo.marcely.de/repository/maven-public/</url>
 		</repository>
 	</repositories>
 
@@ -58,124 +65,15 @@
 		
 		<!-- MineAcademy guaranteed availability repos for plugins -->
 		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>AuthMe</artifactId>
-			<version>5.6.0-SNAPSHOT-2459</version>
+			<groupId>com.github.kangarko</groupId>
+			<artifactId>Foundation</artifactId>
+			<version>${foundation.version}</version>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>CitizensAPI</artifactId>
-			<version>2.0.28-b784</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>CMI-API</artifactId>
-			<version>7.6.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>DiscordSRV</artifactId>
-			<version>1.22.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>EssentialsX</artifactId>
-			<version>2.19.0-SNAPSHOT-1148</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>Factions</artifactId>
-			<version>3.3.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>FactionsUUID</artifactId>
-			<version>1.6.9.5-U0.5.17-b237</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>Jobs</artifactId>
-			<version>4.17.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>LandsAPI</artifactId>
-			<version>5.4.12</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>LWC</artifactId>
-			<version>2.2.7</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>MassiveCore</artifactId>
-			<version>3.3.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>mcMMO</artifactId>
-			<version>2.1.157</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>Multiverse-Core</artifactId>
-			<version>4.2.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>NuVotifier</artifactId>
-			<version>2.7.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>PlaceholderAPI</artifactId>
-			<version>2.10.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>ProtocolLib</artifactId>
-			<version>4.6.1-SNAPSHOT-b499</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>Residence</artifactId>
-			<version>4.9.3.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>SimpleClans</artifactId>
-			<version>2.15.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>StackMob</artifactId>
-			<version>5.5.3</version>
-		</dependency>		
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>Towny</artifactId>
-			<version>0.97.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>TownyChat</artifactId>
-			<version>0.88</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>Vault</artifactId>
-			<version>1.7.3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>WorldEdit</artifactId>
-			<version>7.3.0-SNAPSHOT-5758</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.plugin</groupId>
-			<artifactId>WorldGuard</artifactId>
-			<version>7.0.5-SNAPSHOT-2109</version>
+			<groupId>de.marcely.bedwars</groupId>
+			<artifactId>API</artifactId>
+			<version>5.0-Beta7</version>
 		</dependency>
 	</dependencies>
 	<build>
