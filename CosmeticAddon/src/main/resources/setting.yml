@@ -1,0 +1,42 @@
+# Welcome to Config Of Cosmetic Addon By Harsh
+
+
+# Change Only The Prefix
+Prefix: "&bMarcelAddon &7>> "
+Log_Lag_Over_Milis: 100 #Dont Change
+debug: [] #Dont Change
+verion: 1 # Dont Change
+
+# Two Modes Are Available eco And md 'eco' means Economy (Vault Required) and 'md' Means Mystery Dust (GadgetMenu Required)
+mode: eco
+
+
+
+
+
+#   | You Can Set Custom Prizes Below  |
+#  \/                                 \/
+
+# ==================================================================================
+#                                VICTORY DANCES
+# ==================================================================================
+dragon-summoner: 5000
+wither-diployer: 5000
+joystick: 5000
+
+# ===================================================================================
+#                                 FINAL KILL EFFECTS
+# ===================================================================================
+lighting: 2000
+zombie-death: 1000
+
+# ===================================================================================
+#                                 BED BREAK EFFECTS
+# ===================================================================================
+pig-spawn: 4000
+rocket: 2000
+
+# ===================================================================================
+#                                 BOW TRAILS
+# ===================================================================================
+flame: 3000

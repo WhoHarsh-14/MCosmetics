@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.bukkit.Location;
 import org.bukkit.entity.*;
+import org.bukkit.event.EventHandler;
 import org.bukkit.inventory.ItemStack;
 import org.mineacademy.fo.Common;
 import org.mineacademy.fo.Valid;
@@ -36,10 +37,12 @@ public abstract class VictoryDance {
         player.setHealthScale(30);
         player.setHealth(20);
         entity.setVelocity(player.getEyeLocation().getDirection().multiply(3));
+        CompMetadata.setTempMetadata(player, "TEST");
         Common.runTimer(20, () -> {
-            countdown ++;
-            if (countdown == 5){
+            countdown++;
+            if (countdown == 5) {
                 entity.remove();
+                CompMetadata.removeTempMetadata(player, "TEST");
                 countdown = 0;
             }
         });

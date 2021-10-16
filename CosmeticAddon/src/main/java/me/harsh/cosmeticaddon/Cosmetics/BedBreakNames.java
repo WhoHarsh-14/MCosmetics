@@ -1,5 +1,5 @@
 package me.harsh.cosmeticaddon.Cosmetics;
 
-public enum FinalKillNames {
-    LIGHTING
+public enum BedBreakNames {
+    PIGBOI
 }
