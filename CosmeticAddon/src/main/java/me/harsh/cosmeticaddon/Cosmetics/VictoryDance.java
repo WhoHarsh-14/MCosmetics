@@ -14,7 +14,7 @@ import org.mineacademy.fo.menu.model.ItemCreator;
 import org.mineacademy.fo.remain.CompMaterial;
 import org.mineacademy.fo.remain.CompMetadata;
 
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+
 @Setter(AccessLevel.PROTECTED)
 public abstract class VictoryDance {
     private Player player;
@@ -34,14 +34,13 @@ public abstract class VictoryDance {
         player.setGlowing(true);
         location.getWorld().createExplosion(location, 1);
         player.setHealthScale(30);
-        player.setHealth(player.getHealthScale());
+        player.setHealth(20);
         entity.setVelocity(player.getEyeLocation().getDirection().multiply(3));
         Common.runTimer(20, () -> {
             countdown ++;
             if (countdown == 5){
                 entity.remove();
                 countdown = 0;
-                return;
             }
         });
     }
@@ -51,6 +50,13 @@ public abstract class VictoryDance {
         CompMetadata.setMetadata(item, ITEM_KEY, "Items");
         player.getInventory().clear();
         player.getInventory().addItem(item);
+        Common.runTimer(20, () -> {
+            countdown++;
+            if (countdown == 5){
+                player.getInventory().remove(item);
+                countdown = 0;
+            }
+        });
     }
 
     public String getName() {
