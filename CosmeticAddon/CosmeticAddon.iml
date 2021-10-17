@@ -21,6 +21,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="GadgetsMenu" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.20" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.logging.log4j:log4j-core:2.14.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.logging.log4j:log4j-api:2.14.1" level="project" />
@@ -56,5 +57,6 @@
     <orderEntry type="library" name="Maven: org.mineacademy.plugin:WorldEdit:7.3.0-SNAPSHOT-5758" level="project" />
     <orderEntry type="library" name="Maven: org.mineacademy.plugin:WorldGuard:7.0.5-SNAPSHOT-2109" level="project" />
     <orderEntry type="library" name="Maven: de.marcely.bedwars:API:5.0-Beta7" level="project" />
+    <orderEntry type="library" name="Maven: com.OnlyNoobDied:GadgetsMenu:4.5.4" level="project" />
   </component>
 </module>

@@ -1,6 +1,5 @@
 package me.harsh.cosmeticaddon.Events;
 
-import de.marcely.bedwars.api.arena.Arena;
 import de.marcely.bedwars.api.event.player.SpectatorJoinArenaEvent;
 import me.harsh.cosmeticaddon.CosmeticAddon;
 import org.bukkit.World;

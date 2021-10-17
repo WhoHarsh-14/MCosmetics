@@ -75,6 +75,11 @@
 			<artifactId>API</artifactId>
 			<version>5.0-Beta7</version>
 		</dependency>
+		<dependency>
+			<groupId>com.OnlyNoobDied</groupId>
+			<artifactId>GadgetsMenu</artifactId>
+			<version>4.5.4</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
