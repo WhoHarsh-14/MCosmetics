@@ -30,6 +30,7 @@ public class MainMenu extends Menu {
             @Override
             public void onClickedInMenu(Player player, Menu menu, ClickType click) {
                 VictoryDanceMenu menu1 = new VictoryDanceMenu();
+                CompSound.WITHER_SPAWN.play(player);
                 menu1.displayTo(player);
             }
 
@@ -47,6 +48,7 @@ public class MainMenu extends Menu {
             @Override
             public void onClickedInMenu(Player player, Menu menu, ClickType click) {
                 Menu menu1 = new BedBreakMenu();
+                CompSound.WITHER_SPAWN.play(player);
                 menu1.displayTo(player);
             }
 
