@@ -2,12 +2,17 @@ package me.harsh.cosmeticaddon;
 
 
 import com.sun.org.apache.xpath.internal.operations.Mod;
+import me.harsh.cosmeticaddon.Commands.CosmeticCommand;
 import me.harsh.cosmeticaddon.Configs.ConfigYamlSettings;
+import me.harsh.cosmeticaddon.Cosmetics.BedBreakEffects.PigBoi;
 import me.harsh.cosmeticaddon.Cosmetics.BedBreakNames;
+import me.harsh.cosmeticaddon.Cosmetics.FinalKill.LightingKill;
 import me.harsh.cosmeticaddon.Cosmetics.FinalKillNames;
 import me.harsh.cosmeticaddon.Cosmetics.VictoryDanceNames;
 import me.harsh.cosmeticaddon.Cosmetics.VictoryDance;
 import me.harsh.cosmeticaddon.Cosmetics.VictoryDances.DragonSummoner;
+import me.harsh.cosmeticaddon.Cosmetics.VictoryDances.JoyStick;
+import me.harsh.cosmeticaddon.Cosmetics.VictoryDances.WitherDomination;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.mineacademy.fo.Common;
@@ -19,9 +24,6 @@ import java.util.*;
 public final class CosmeticAddon extends SimplePlugin {
     public static String MODE;
     private static Economy econ = null;
-    public static final Map<UUID, VictoryDanceNames> playerCosmetic = new HashMap<>();
-    public final Map<UUID, BedBreakNames> bedbreakCosmetic = new HashMap<>();
-    public final Map<UUID, FinalKillNames> finalKillCosmetic = new HashMap<>();
 
     @Override
     protected void onPluginStart() {
@@ -42,6 +44,12 @@ public final class CosmeticAddon extends SimplePlugin {
                 Common.log("Mystery Dust Found Loading GadgetMenu");
                 break;
         }
+        registerCommand(new CosmeticCommand());
+        registerEvents(new DragonSummoner());
+        registerEvents(new JoyStick());
+        registerEvents(new WitherDomination());
+        registerEvents(new LightingKill(this));
+        registerEvents(new PigBoi(this));
         Common.log("Loaded Cosmetic Addon");
         Common.log("==================================================================");
     }

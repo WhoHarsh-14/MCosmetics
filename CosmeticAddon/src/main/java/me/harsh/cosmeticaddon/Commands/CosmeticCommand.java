@@ -1,15 +1,18 @@
 package me.harsh.cosmeticaddon.Commands;
 
+import me.harsh.cosmeticaddon.Menu.MainMenu;
 import org.mineacademy.fo.command.SimpleCommand;
 
 public class CosmeticCommand extends SimpleCommand {
 
-    protected CosmeticCommand() {
-        super("");
+    public CosmeticCommand() {
+        super("gameMenu");
     }
 
     @Override
     protected void onCommand() {
-
+        checkConsole();
+        MainMenu menu = new MainMenu();
+        menu.displayTo(getPlayer());
     }
 }
